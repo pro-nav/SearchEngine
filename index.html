@@ -1,1 +1,171 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Search</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        transition: 0.2s;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #f2f2f2;
+      }
+      header {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+      }
+      body > div {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+      header li {
+        float: right;
+      }
+
+      li {
+        display: block;
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+        line-height: 30px;
+      }
+      a,
+      a:visited,
+      a:active,
+      a:any-link {
+        color: inherit;
+        text-decoration: none;
+      }
+      .circle {
+        width: 35px;
+        height: 35px;
+        border: none;
+        border-radius: 50%;
+        font-size: 25px;
+      }
+      .circle:hover {
+        background-color: gray;
+        transform: scale(1.2);
+      }
+      .logo {
+        transform: scale(0.8);
+      }
+      .search {
+        border: 1px solid grey;
+        height: 30px;
+        width: 40vw;
+        margin: auto;
+        display: inline-block;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 25px;
+      }
+      .search input {
+        border: none;
+        height: 100%;
+        width: 80%;
+        outline: none;
+        font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      div .buttons {
+        padding: 10px;
+      }
+
+      button {
+        border: none;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        outline: none;
+      }
+      button:hover {
+        outline: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <a href="#"
+            ><div class="circle userpic">
+              <i class="fa fa-user" aria-hidden="true"></i></div
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><div class="circle">
+              <i class="fa fa-th" aria-hidden="true"></i></div
+          ></a>
+        </li>
+        <li><a href="#">Images</a></li>
+
+        <li><a href="#">Mail</a></li>
+      </ul>
+    </header>
+    <div>
+      <div>
+        <div class="logo"><img src="./koj.png" alt="BLAHAJGANG" /></div>
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input type="text" name="" id="search" />
+          <i class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+        <div class="buttons">
+          <button>Blahaj Search</button>
+          <button
+            onclick="window.location.href='https://melon.blahajgang.lol/'"
+          >
+            Melon Time
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>Business</li>
+        <li>How Search Works</li>
+      </ul>
+    </footer>
+  </body>
+</html>
