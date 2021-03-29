@@ -126,20 +126,20 @@
     <header>
       <ul>
         <li>
-          <a href="https://melon.blahajgang.lol/"
+          <a href="https://melon.blahajgang.lol/#squad"
             ><div class="circle userpic">
               <i class="fa fa-user" aria-hidden="true"></i></div
           ></a>
         </li>
         <li>
-          <a href="https://melon.blahajgang.lol/"
+          <a href="https://melon.blahajgang.lol/#events"
             ><div class="circle">
               <i class="fa fa-th" aria-hidden="true"></i></div
           ></a>
         </li>
-        <li><a href="https://melon.blahajgang.lol/">Images</a></li>
+        <li><a href="https://melon.blahajgang.lol/#art">Images</a></li>
 
-        <li><a href="https://melon.blahajgang.lol/">Mail</a></li>
+        <li><a href="https://melon.blahajgang.lol/#join">Mail</a></li>
       </ul>
     </header>
     <div>
@@ -153,6 +153,7 @@
         <div class="buttons">
           <button
             onclick="window.location.href='https://melon.blahajgang.lol/'"
+            id="searchbtn"
           >
             Blahaj Search
           </button>
@@ -171,5 +172,15 @@
         <li>How Search Works</li>
       </ul>
     </footer>
+
+    <script>
+      var input = document.getElementById("search");
+      input.addEventListener("keyup", function (e) {
+        if (input.value != "" && e.keyCode === 13) {
+          e.preventDefault();
+          document.getElementById("searchbtn").click();
+        }
+      });
+    </script>
   </body>
 </html>
